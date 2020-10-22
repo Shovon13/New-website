@@ -2,11 +2,90 @@
 <html>
     <head>
         <title>New Website</title>
+        <style>
+            h1{
+                color: goldenrod;
+            }
+            .style:hover{
+                color: indigo;
+                font-size: 30px;
+                background-color: lightcoral;
+            }
+            input:focus{
+                font-weight: 700;
+                color: lightcoral;
+            }
+            li:nth-child(2n+1){
+                color: lightcoral;
+            }
+            body{
+                counter-reset: section;
+            }
+            p::before{
+                counter-increment: section;
+                content: "crush" counter(section) ": ";
+            }
+            .conteiner{
+                background-color: silver;
+            }
+            div{
+                height: 100px;
+                width: 100px;
+            }
+            #first{
+                background-color: darkred;
+            }
+            #second{
+                background-color: darkturquoise;
+                position: fixed;
+                left: 100px;
+            }
+            #third{
+                background-color: darkgoldenrod;
+            }
+            h3{
+                color: skyblue;
+            }
+            .name{
+                color: teal;
+            }
+            #obama{
+                color: darkgoldenrod !important;
+            }
+        </style>
     </head>
     <body>
         <h1>First Header</h1>
         <p>This is a paragraph</p>
         <h2>Second Header</h2>
         <p>Cholo git e code push kori</p>
+        <h1 class="style">Pseudo Class</h1>
+        <h1>Normal Class</h1>
+        <h1>Bhodro Class</h1>
+        <input name="email" type="text"><br>
+        <input name="password" type="text"><br>
+        <ul>
+            <p>apple</p>
+            <p>ball</p>
+            <p>cat</p>
+            <p>Dog</p>
+            <p>egale</p>
+            <p>foul</p>
+            <p>girl</p>
+        </ul>
+        <section>
+            <h2>Learning and Climbing Position High</h2>
+        </section>
+        <section class="conteiner">
+            <div id="first"></div>
+            <div id="second"></div>
+            <div id="third"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <h3 style="color: darkorchid;" id="obama" class="name">Hello World</h3>
     </body>
 </html>
